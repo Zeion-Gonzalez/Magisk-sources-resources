@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@android:anim/anticipate_interpolator"
+        android:duration="300"
+        android:valueFrom="M 487.06 423.67 C 450.04 417.37 435.82 366.44 399.15 355.87 L 399.15 355.87 C 393.715 354.305 388.563 354.31 383.891 355.198 C 379.219 356.086 375.029 357.856 371.517 359.822 C 368.006 361.789 365.174 363.951 363.22 365.621 C 361.266 367.291 360.19 368.47 360.19 368.47 C 360.19 368.47 360.291 371.528 360.96 375.629 C 361.63 379.73 362.867 384.874 365.14 389.048 C 367.412 393.221 370.72 396.423 375.53 396.64 C 415.49 398.45 422.5 458.03 482.46 457.15 C 564.32 455.95 596.97 356.99 587.59 370.29 C 555.88 415.28 532.14 425.89 513.37 426.79 C 503.33 427.27 494.71 424.97 487.06 423.67"
+        android:valueTo="M 540 120 C 515 120 490 120 465 120 L 444 99 C 438 93 432 90 423 90 C 381 90 339 90 297 90 C 288 90 282 93 276 99 C 269 106 262 113 255 120 C 230 120 205 120 180 120 C 162 120 150 135 150 150 C 150 165 162 180 180 180 C 300 180 420 180 540 180 C 555 180 570 168 570 150 C 570 132 555 120 540 120 C 540 120 540 120 540 120"
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@interpolator/fast_out_slow_in"
+        android:duration="10"
+        android:startOffset="290"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+</set>

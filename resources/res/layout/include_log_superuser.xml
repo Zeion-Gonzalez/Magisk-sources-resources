@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/include_log_superuser_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="vertical"
+        android:id="@+id/log_superuser"
+        android:tag="binding_1"
+        android:paddingTop="@dimen/internal_action_bar_size"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fitsSystemWindowsInsets="bottom"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <ProgressBar
+        android:tag="binding_2"
+        android:layout_marginTop="@dimen/l1"
+        style="@style/WidgetFoundation.ProgressBar.Indeterminate"/>
+    <FrameLayout
+        android:layout_gravity="center"
+        android:tag="binding_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_text"/>
+    </FrameLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/snackbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fitsSystemWindowsInsets="bottom"/>
+</FrameLayout>

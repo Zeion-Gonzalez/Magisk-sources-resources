@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/fragment_flash_md2_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/internal_action_bar_size"
+        app:layout_fitsSystemWindowsInsets="top">
+        <androidx.recyclerview.widget.RecyclerView
+            android:orientation="vertical"
+            android:id="@+id/flash_content"
+            android:tag="binding_1"
+            android:clipToPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:fitsSystemWindowsInsets="end|bottom"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </HorizontalScrollView>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_gravity="end|bottom"
+        android:id="@+id/restart_btn"
+        android:tag="binding_2"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/l1"
+        android:layout_marginBottom="@dimen/l1"
+        android:text="@string/reboot"
+        android:textAllCaps="false"
+        app:backgroundTint="?attr/colorPrimary"
+        app:icon="@drawable/ic_restart"
+        app:iconTint="?attr/colorOnPrimary"
+        app:layout_fitsSystemWindowsInsets="bottom"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/snackbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fitsSystemWindowsInsets="bottom"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:tag="layout/dialog_settings_update_channel_0"
+    android:padding="@dimen/margin_generic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_generic"
+        android:hint="@string/settings_update_custom_msg"
+        app:boxStrokeColor="?attr/colorOnSurfaceVariant"
+        app:errorTextColor="?attr/colorError"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/AppearanceFoundation.Tiny"
+        app:hintTextColor="?attr/colorOnSurfaceVariant"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textAppearance="@style/AppearanceFoundation.Body"
+            android:textColor="?attr/colorOnSurface"
+            android:id="@+id/dialog_custom_download_text"
+            android:tag="binding_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textUri"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

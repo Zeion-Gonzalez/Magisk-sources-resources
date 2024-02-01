@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/item_settings_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/WidgetFoundation.Card">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:tag="binding_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/l1">
+        <ImageView
+            android:id="@+id/icon"
+            android:tag="binding_2"
+            android:background="@null"
+            style="@style/WidgetFoundation.Icon"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/l1"
+            android:paddingBottom="@dimen/l1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:textAppearance="@style/AppearanceFoundation.Body"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:tag="binding_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textAppearance="@style/AppearanceFoundation.Tiny.Variant"
+                android:tag="binding_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/selector_indicator"
+            android:tag="binding_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_home_md2"
+        android:id="@+id/homeFragment"
+        android:title="@string/section_home"/>
+    <item
+        android:icon="@drawable/ic_superuser_md2"
+        android:id="@+id/superuserFragment"
+        android:title="@string/superuser"/>
+    <item
+        android:icon="@drawable/ic_bug_md2"
+        android:id="@+id/logFragment"
+        android:title="@string/logs"/>
+    <item
+        android:icon="@drawable/ic_module_md2"
+        android:id="@+id/modulesFragment"
+        android:title="@string/modules"/>
+</menu>

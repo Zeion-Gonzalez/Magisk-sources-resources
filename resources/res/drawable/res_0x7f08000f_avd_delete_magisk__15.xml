@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@interpolator/fast_out_slow_in"
+        android:duration="200"
+        android:startOffset="800"
+        android:valueFrom="M 246.13 209.51 L 246.13 209.51 C 275.42 240.47 264.28 236.29 316.97 269.47 C 316.97 269.47 273.24 245.98 235.81 235.73 C 200.83 226.15 174.6 202.6 171.67 177.72 C 169.49 159.18 198.72 124.17 198.72 124.17 C 198.72 124.17 203.847 138.395 212.338 156.175 C 220.827 173.955 232.68 195.29 246.13 209.51"
+        android:valueTo="M 311.95 289.55 L 311.95 289.54 C 313.97 298.49 293.75 319.6 254.78 317.99 C 227.97 316.883 208.447 301.496 194.565 282.066 C 180.684 262.637 172.444 239.166 168.201 221.894 C 163.959 204.621 163.713 193.547 165.82 198.91 C 180.01 235.025 213.975 246.287 245.676 254.22 C 277.377 262.152 306.815 266.755 311.95 289.55"
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@interpolator/fast_out_slow_in"
+        android:duration="10"
+        android:startOffset="800"
+        android:valueFrom="0"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+</set>

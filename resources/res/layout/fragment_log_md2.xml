@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/fragment_log_md2_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/log_filter_magisk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/include_log_magisk"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_gravity="end|bottom"
+        android:id="@+id/log_filter_toggle"
+        android:tag="binding_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:layout_marginStart="@dimen/l1"
+        android:layout_marginEnd="@dimen/l1"
+        app:backgroundTint="?attr/colorSurfaceSurfaceVariant"
+        app:layout_fitsSystemWindowsInsets="bottom"
+        app:srcCompat="@drawable/ic_folder_list"
+        app:tint="?attr/colorPrimary"/>
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_gravity="bottom"
+        android:id="@+id/log_filter"
+        android:tag="binding_2"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="?attr/colorSurface"
+        app:cardCornerRadius="0dp"
+        style="@style/WidgetFoundation.Card">
+        <include
+            android:id="@+id/log_filter_superuser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/include_log_superuser"/>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+</FrameLayout>

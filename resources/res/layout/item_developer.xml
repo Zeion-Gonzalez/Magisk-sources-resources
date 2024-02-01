@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:tag="layout/item_developer_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/l1"
+    android:paddingEnd="@dimen/l1">
+    <TextView
+        android:textAppearance="@style/AppearanceFoundation.Caption"
+        android:textStyle="bold"
+        android:tag="binding_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:tag="binding_2"
+        android:fadingEdgeLength="@dimen/l1"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:requiresFadingEdge="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:id="@+id/checked"
+        android:drawable="@drawable/ic_superuser_filled_md2"/>
+    <item
+        android:id="@+id/unchecked"
+        android:drawable="@drawable/ic_superuser_outlined_md2"/>
+    <transition
+        android:drawable="@drawable/avd_superuser_from_filled"
+        android:toId="@+id/unchecked"
+        android:fromId="@+id/checked"/>
+    <transition
+        android:drawable="@drawable/avd_superuser_to_filled"
+        android:toId="@+id/checked"
+        android:fromId="@+id/unchecked"/>
+</animated-selector>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/item_tappable_headline_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/WidgetFoundation.Card">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/tappable_icon"
+            android:tag="binding_1"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/WidgetFoundation.Icon"/>
+        <TextView
+            android:textAppearance="@style/AppearanceFoundation.Body"
+            android:textStyle="bold"
+            android:tag="binding_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:requiresFadingEdge="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/headline_icon_pointer"
+            app:layout_constraintStart_toEndOf="@+id/tappable_icon"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/headline_icon_pointer"
+            android:background="@null"
+            android:rotation="180"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back_md2"
+            style="@style/WidgetFoundation.Icon"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
